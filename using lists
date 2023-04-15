@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      ul.navbar {
+        width: 100%;
+        padding: 0;
+        background-color: black;
+        display: flex;
+      }
+
+      ul.navbar li {
+        display: inline-block;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        box-shadow: 0px 8px 16px 0px rgba(202, 194, 194, 0.2);
+      }
+
+      .dropbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 17px;
+        border: none;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        background-color: #04AA6D;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 80px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        background-color: #04AA6D;
+      }
+
+      .dropdown-content a:hover {
+        background-color: black;
+        color: white;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: black;
+      }
+
+      .hover-link:hover {
+        background-color: black;
+        color: #04AA6D;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">Home</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+            <a href="#">Link 6</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="#news" class="hover-link">News</a></li>
+      <li><a href="#contact" class="hover-link">Service</a></li>
+      <li><a href="#about" class="hover-link">Contact Us</a></li>
+    </ul>
+  </body>
+</html>
